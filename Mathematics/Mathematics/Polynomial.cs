@@ -4,9 +4,10 @@ using System.Collections.Generic;
 
 namespace Mathematics
 {
+    /*
     internal class Polynomial
     {
-        private List<double> scalars;
+        public List<double> scalars { get; private set; }
         public int Degree { get; private set; }
 
         public Polynomial(List<double> s)
@@ -73,8 +74,8 @@ namespace Mathematics
             return str;
         }
 
-    }
-    /*
+    }*/
+    
     internal class Polynomial
     {
         private List<Complex> scalars;
@@ -84,6 +85,23 @@ namespace Mathematics
         {
             scalars = s;
             Degree = s.Count-1;
+        }
+        public Polynomial(double a = Double.MaxValue, double b = Double.MaxValue, double c = Double.MaxValue, double d = Double.MaxValue, double e = Double.MaxValue, double f = Double.MaxValue, double g = Double.MaxValue, double h = Double.MaxValue, double i = Double.MaxValue, double j = Double.MaxValue, double k = Double.MaxValue)
+        {
+            scalars = new List<Complex>();
+            double[] nums = new double[] { a, b, c, d, e, f, g, h, i, j, k };
+            int l = 0;
+            for (int spot = nums.Length - 1; spot >= 0; spot--)
+            {
+                if (nums[spot] != Double.MaxValue)
+                    break;
+                l++;
+            }
+            for (int spot = 0; spot < nums.Length - l; spot++)
+            {
+                scalars.Add(new Complex(nums[spot]) );
+            }
+            Degree = scalars.Count - 1;
         }
         /*public Polynomial(Complex a = null, Complex b = null, Complex c = null, Complex d = null, Complex e = null, Complex f = null; Complex g = null, Complex h = null, Complex i = null, Complex j = null, Complex k = null)
         {
@@ -104,12 +122,12 @@ namespace Mathematics
                 scalars.Add(nums[spot]);
             }
             Degree = scalars.Count;
-        }
+        }*/
         public Complex function(double x)
         {
             Complex value = new Complex(0,0);
 
-            for (int spot = 0; spot <= scalars.Count; spot++)
+            for (int spot = 0; spot <= Degree; spot++)
             {
                 value += scalars[spot] * Math.Pow(x, Degree - spot);
             }
@@ -161,6 +179,6 @@ namespace Mathematics
             return str;
         }
         
-    }*/
+    }
 
 }

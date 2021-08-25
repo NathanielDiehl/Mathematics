@@ -8,23 +8,23 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Nathan Diehl\\.nuget\\packages\\": {},
+    "C:\\Users\\Nathan\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Documents\\_Programming\\C#\\Mathematics\\Mathematics\\Mathematics\\Mathematics.csproj",
+      "projectUniqueName": "C:\\Users\\Nathan\\Documents\\School\\Data Structures\\Mathematics\\Mathematics\\Mathematics\\Mathematics.csproj",
       "projectName": "Mathematics",
-      "projectPath": "D:\\Documents\\_Programming\\C#\\Mathematics\\Mathematics\\Mathematics\\Mathematics.csproj",
-      "packagesPath": "C:\\Users\\Nathan Diehl\\.nuget\\packages\\",
-      "outputPath": "D:\\Documents\\_Programming\\C#\\Mathematics\\Mathematics\\Mathematics\\obj\\",
+      "projectPath": "C:\\Users\\Nathan\\Documents\\School\\Data Structures\\Mathematics\\Mathematics\\Mathematics\\Mathematics.csproj",
+      "packagesPath": "C:\\Users\\Nathan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Nathan\\Documents\\School\\Data Structures\\Mathematics\\Mathematics\\Mathematics\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Nathan Diehl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Nathan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

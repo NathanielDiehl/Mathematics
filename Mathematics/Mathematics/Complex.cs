@@ -79,6 +79,17 @@ namespace Mathematics
         }
         public override string ToString()
         {
+            if(Real == 0 && Imaginary == 0)
+            {
+                return "";
+            }else if (Real == 0)
+            {
+                return Imaginary + "i";
+            }
+            else if (Imaginary == 0)
+            {
+                return Real.ToString();
+            }
             return Real + " + " + Imaginary + "i";
         }
     }
