@@ -145,6 +145,29 @@ namespace Mathematics
 
             return new Polynomial(newP);
         }
+        public static Polynomial operator +(Polynomial p1, Polynomial p2)
+        {
+            Polynomial newP;
+            if (p1.Degree < p2.Degree)
+            {
+                newP = new Polynomial(p2.scalars);
+                for (int i = 0; i <= p1.Degree; i++)
+                {
+                    newP.scalars[newP.Degree - i] += p1.scalars[p1.Degree - i];
+                }
+            }
+            else
+            {
+                newP = new Polynomial(p2.scalars);
+                for (int i = 0; i <= p1.Degree; i++)
+                {
+                    newP.scalars[newP.Degree - i] += p1.scalars[p1.Degree - i];
+                }
+            }
+
+
+            return newP;
+        }
         public override string ToString()
         {
             string str = "";

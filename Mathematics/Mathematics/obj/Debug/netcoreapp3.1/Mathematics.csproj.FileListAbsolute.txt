@@ -12,3 +12,17 @@ C:\Users\Nathan\Documents\School\Data Structures\Mathematics\Mathematics\Mathema
 C:\Users\Nathan\Documents\School\Data Structures\Mathematics\Mathematics\Mathematics\obj\Debug\netcoreapp3.1\Mathematics.dll
 C:\Users\Nathan\Documents\School\Data Structures\Mathematics\Mathematics\Mathematics\obj\Debug\netcoreapp3.1\Mathematics.pdb
 C:\Users\Nathan\Documents\School\Data Structures\Mathematics\Mathematics\Mathematics\obj\Debug\netcoreapp3.1\Mathematics.genruntimeconfig.cache
+C:\Users\Nathan\Documents\Programming\C#\Mathematics\Mathematics\Mathematics\bin\Debug\netcoreapp3.1\Mathematics.exe
+C:\Users\Nathan\Documents\Programming\C#\Mathematics\Mathematics\Mathematics\bin\Debug\netcoreapp3.1\Mathematics.deps.json
+C:\Users\Nathan\Documents\Programming\C#\Mathematics\Mathematics\Mathematics\bin\Debug\netcoreapp3.1\Mathematics.runtimeconfig.json
+C:\Users\Nathan\Documents\Programming\C#\Mathematics\Mathematics\Mathematics\bin\Debug\netcoreapp3.1\Mathematics.runtimeconfig.dev.json
+C:\Users\Nathan\Documents\Programming\C#\Mathematics\Mathematics\Mathematics\bin\Debug\netcoreapp3.1\Mathematics.dll
+C:\Users\Nathan\Documents\Programming\C#\Mathematics\Mathematics\Mathematics\bin\Debug\netcoreapp3.1\Mathematics.pdb
+C:\Users\Nathan\Documents\Programming\C#\Mathematics\Mathematics\Mathematics\obj\Debug\netcoreapp3.1\Mathematics.csproj.AssemblyReference.cache
+C:\Users\Nathan\Documents\Programming\C#\Mathematics\Mathematics\Mathematics\obj\Debug\netcoreapp3.1\Mathematics.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nathan\Documents\Programming\C#\Mathematics\Mathematics\Mathematics\obj\Debug\netcoreapp3.1\Mathematics.AssemblyInfoInputs.cache
+C:\Users\Nathan\Documents\Programming\C#\Mathematics\Mathematics\Mathematics\obj\Debug\netcoreapp3.1\Mathematics.AssemblyInfo.cs
+C:\Users\Nathan\Documents\Programming\C#\Mathematics\Mathematics\Mathematics\obj\Debug\netcoreapp3.1\Mathematics.csproj.CoreCompileInputs.cache
+C:\Users\Nathan\Documents\Programming\C#\Mathematics\Mathematics\Mathematics\obj\Debug\netcoreapp3.1\Mathematics.dll
+C:\Users\Nathan\Documents\Programming\C#\Mathematics\Mathematics\Mathematics\obj\Debug\netcoreapp3.1\Mathematics.pdb
+C:\Users\Nathan\Documents\Programming\C#\Mathematics\Mathematics\Mathematics\obj\Debug\netcoreapp3.1\Mathematics.genruntimeconfig.cache

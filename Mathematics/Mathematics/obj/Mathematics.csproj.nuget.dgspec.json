@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nathan\\Documents\\School\\Data Structures\\Mathematics\\Mathematics\\Mathematics\\Mathematics.csproj": {}
+    "C:\\Users\\Nathan\\Documents\\Programming\\C#\\Mathematics\\Mathematics\\Mathematics\\Mathematics.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nathan\\Documents\\School\\Data Structures\\Mathematics\\Mathematics\\Mathematics\\Mathematics.csproj": {
+    "C:\\Users\\Nathan\\Documents\\Programming\\C#\\Mathematics\\Mathematics\\Mathematics\\Mathematics.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nathan\\Documents\\School\\Data Structures\\Mathematics\\Mathematics\\Mathematics\\Mathematics.csproj",
+        "projectUniqueName": "C:\\Users\\Nathan\\Documents\\Programming\\C#\\Mathematics\\Mathematics\\Mathematics\\Mathematics.csproj",
         "projectName": "Mathematics",
-        "projectPath": "C:\\Users\\Nathan\\Documents\\School\\Data Structures\\Mathematics\\Mathematics\\Mathematics\\Mathematics.csproj",
+        "projectPath": "C:\\Users\\Nathan\\Documents\\Programming\\C#\\Mathematics\\Mathematics\\Mathematics\\Mathematics.csproj",
         "packagesPath": "C:\\Users\\Nathan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nathan\\Documents\\School\\Data Structures\\Mathematics\\Mathematics\\Mathematics\\obj\\",
+        "outputPath": "C:\\Users\\Nathan\\Documents\\Programming\\C#\\Mathematics\\Mathematics\\Mathematics\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
