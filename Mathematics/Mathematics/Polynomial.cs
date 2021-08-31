@@ -78,7 +78,7 @@ namespace Mathematics
     
     internal class Polynomial
     {
-        private List<Complex> scalars;
+        public List<Complex> scalars { get; private set; }
         public int Degree { get; private set; }
 
         public Polynomial(List<Complex> s)
