@@ -10,22 +10,28 @@ namespace Mathematics
         public int Row { get; private set; }
         public int Column { get; private set; }
 
-        private static bool isSquare(List<List<double>> m)
+        private static bool isRectangular(List<List<double>> m)
         {
             if (m[0].Count != m.Count)
                 return false;
-            for (int i = 0; i < m.Count-1; i++)
+            for (int i = 0; i < m.Count - 1; i++)
             {
                 if (m[i].Count != m[i + 1].Count)
                     return false;
             }
-                return true;
+            return true;
+        }
+        private static bool isSquare(List<List<double>> m)
+        {
+            if (m[0].Count != m.Count)
+                return false;
+            return isRectangular(m);
         }
         public Matrix(List<List<double>> m)
         {
-            if (!isSquare(m))
+            if (!isRectangular(m))
             {
-                throw new NonSquareMatrix();
+                throw new NonRectangularMatrix();
             }
             matrix = m;
             Row = matrix[0].Count;
@@ -38,9 +44,9 @@ namespace Mathematics
             {
                 temp.Add(new List<double>(m[i]));
             }
-            if (!isSquare(temp))
+            if (!isRectangular(temp))
             {
-                throw new NonSquareMatrix();
+                throw new NonRectangularMatrix();
             }
             matrix = temp;
             Row = matrix[0].Count;
@@ -48,13 +54,13 @@ namespace Mathematics
         }
     }
 
-    class NonSquareMatrix : Exception
+    class NonRectangularMatrix : Exception
     {
         public override string Message
         {
             get
             {
-                return "matrix cannot be non square";
+                return "matrix cannot be non rectangular";
             }
         }
     }

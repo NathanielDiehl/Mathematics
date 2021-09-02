@@ -17,7 +17,7 @@ namespace Mathematics
 
             Vector v1 = new Vector(1, 2, 3, 4);
             Vector v2 = new Vector(10, 20, 30);
-            //Console.WriteLine(v2 - v1);
+            Console.WriteLine(v2 * v1);
         }
     }
 }

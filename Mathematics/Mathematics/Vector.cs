@@ -71,6 +71,35 @@ namespace Mathematics
             return newV;
         }
 
+        public static Vector operator *(Vector v1, Vector v2) ///Dot
+        {
+            Vector newV;
+            int shorterDimension;
+            int longerDimension;
+            List<double> numbers = new List<double>(); ;
+            if (v1.dimensions > v2.dimensions)
+            {
+                shorterDimension = v2.dimensions;
+                longerDimension = v1.dimensions;
+            }
+            else
+            {
+                shorterDimension = v1.dimensions;
+                longerDimension = v2.dimensions;
+            }
+            for (int i = 0; i < longerDimension; i++)
+            {
+                numbers.Add(0);
+            }
+            newV = new Vector(numbers);
+            for (int i = 0; i < shorterDimension; i++)
+            {
+                newV.vector[i] = v1.vector[i] * v2.vector[i];
+            }
+
+            return newV;
+        }
+
         public static Vector operator -(Vector v1, Vector v2)
         {
             return v1 + (-1 * v2);
