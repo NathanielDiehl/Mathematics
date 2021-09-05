@@ -7,11 +7,11 @@ namespace Mathematics
     internal class Vector
     {
         public List<double> vector;
-        public int dimensions { get; private set; }
+        public int Dimensions { get; private set; }
         public Vector(List<double> v)
         {
             vector = v;
-            dimensions = v.Count;
+            Dimensions = v.Count;
         }
         public Vector(double[] v) : this(new List<double>(v))
         {
@@ -31,7 +31,7 @@ namespace Mathematics
             {
                 vector.Add(nums[spot]);
             }
-            dimensions = vector.Count;
+            Dimensions = vector.Count;
         }
         public double Magnitude()
         {
@@ -51,7 +51,7 @@ namespace Mathematics
         {
             List<double> newV = new List<double>();
 
-            for (int i = 0; i < v.dimensions; i++)
+            for (int i = 0; i < v.Dimensions; i++)
             {
                 newV.Add(v.vector[i] * s);
             }
@@ -70,7 +70,7 @@ namespace Mathematics
         {
             Vector newV;
             Vector shortV;
-            if (v1.dimensions > v2.dimensions)
+            if (v1.Dimensions > v2.Dimensions)
             {
                 shortV = v2;
                 newV = v1;
@@ -81,7 +81,7 @@ namespace Mathematics
                 newV = v2;
             }
 
-            for (int i = 0; i < shortV.dimensions; i++)
+            for (int i = 0; i < shortV.Dimensions; i++)
             {
                 newV.vector[i] += shortV.vector[i];
             }
@@ -95,15 +95,15 @@ namespace Mathematics
             int shorterDimension;
             int longerDimension;
             List<double> numbers = new List<double>(); ;
-            if (v1.dimensions > v2.dimensions)
+            if (v1.Dimensions > v2.Dimensions)
             {
-                shorterDimension = v2.dimensions;
-                longerDimension = v1.dimensions;
+                shorterDimension = v2.Dimensions;
+                longerDimension = v1.Dimensions;
             }
             else
             {
-                shorterDimension = v1.dimensions;
-                longerDimension = v2.dimensions;
+                shorterDimension = v1.Dimensions;
+                longerDimension = v2.Dimensions;
             }
             for (int i = 0; i < longerDimension; i++)
             {
@@ -127,10 +127,10 @@ namespace Mathematics
         {
             String str = "<";
 
-            for (int i = 0; i < dimensions; i++)
+            for (int i = 0; i < Dimensions; i++)
             {
                 str += vector[i];
-                if (i != dimensions - 1)
+                if (i != Dimensions - 1)
                     str += ", ";
             }
             str += ">";

@@ -10,7 +10,7 @@ namespace Mathematics
         public int Row { get; private set; }
         public int Column { get; private set; }
 
-        private static bool isRectangular(List<List<double>> m)
+        private static bool IsRectangular(List<List<double>> m)
         {
             if (m[0].Count != m.Count)
                 return false;
@@ -21,31 +21,31 @@ namespace Mathematics
             }
             return true;
         }
-        private static bool isSquare(List<List<double>> m)
+        private static bool IsSquare(List<List<double>> m)
         {
             if (m[0].Count != m.Count)
                 return false;
-            return isRectangular(m);
+            return IsRectangular(m);
         }
-        private static bool doDiminutionsMatch(List<List<double>> m1, List<List<double>> m2)
+        private static bool DoDiminutionsMatch(List<List<double>> m1, List<List<double>> m2)
         {
             if (m1[0].Count != m2[0].Count)
                 return false;
             if (m1.Count != m2.Count)
                 return false;
-            return isRectangular(m1) && isRectangular(m2);
+            return IsRectangular(m1) && IsRectangular(m2);
         }
 
-        private static bool isMultipliable(List<List<double>> m1, List<List<double>> m2)
+        private static bool IsMultipliable(List<List<double>> m1, List<List<double>> m2)
         {
             if (m1[0].Count != m2.Count)
                 return false;
-            return isRectangular(m1) && isRectangular(m2);
+            return IsRectangular(m1) && IsRectangular(m2);
         }
 
         public Matrix(List<List<double>> m)
         {
-            if (!isRectangular(m))
+            if (!IsRectangular(m))
             {
                 throw new NonRectangularMatrix();
             }
@@ -60,7 +60,7 @@ namespace Mathematics
             {
                 temp.Add(new List<double>(m[i]));
             }
-            if (!isRectangular(temp))
+            if (!IsRectangular(temp))
             {
                 throw new NonRectangularMatrix();
             }
@@ -81,7 +81,7 @@ namespace Mathematics
             return new Vector(l);
         }
         public double Determinate() {
-            if (!isSquare(matrix))
+            if (!IsSquare(matrix))
                 throw new NonSquareMatrix();
             if (matrix.Count == 1)
                 return matrix[0][0];
@@ -134,7 +134,7 @@ namespace Mathematics
         }
         public static Matrix operator +(Matrix m1, Matrix m2)
         {
-            if (!doDiminutionsMatch(m1.matrix, m2.matrix))
+            if (!DoDiminutionsMatch(m1.matrix, m2.matrix))
                 throw new MismatchedMatrixDiminutions();
             List<List<double>> newM = new List<List<double>>();
 
@@ -156,7 +156,7 @@ namespace Mathematics
 
         public static Matrix operator *(Matrix m1, Matrix m2)
         {
-            if (!isMultipliable(m1.matrix, m2.matrix))
+            if (!IsMultipliable(m1.matrix, m2.matrix))
                 throw new MismatchedMatrixDiminutions();
             List<List<double>> newM = new List<List<double>>();
 
