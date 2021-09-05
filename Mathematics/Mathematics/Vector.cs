@@ -33,6 +33,20 @@ namespace Mathematics
             }
             dimensions = vector.Count;
         }
+        public double Magnitude()
+        {
+            double inner = 0;
+            foreach(double num in vector)
+            {
+                inner += num * num;
+            }
+            return Math.Sqrt(inner);
+        }
+        public Vector Unit()
+        {
+            
+            return this/this.Magnitude();
+        }
         public static Vector operator *(Vector v, double s)
         {
             List<double> newV = new List<double>();
@@ -47,6 +61,10 @@ namespace Mathematics
         public static Vector operator *(double s, Vector v)
         {
             return v * s;
+        }
+        public static Vector operator /(Vector v, double s)
+        {
+            return v * (1/s);
         }
         public static Vector operator +(Vector v1, Vector v2)
         {
@@ -71,9 +89,9 @@ namespace Mathematics
             return newV;
         }
 
-        public static Vector operator *(Vector v1, Vector v2) ///Dot
+        public static double operator *(Vector v1, Vector v2) ///Dot
         {
-            Vector newV;
+            double dot = 0;
             int shorterDimension;
             int longerDimension;
             List<double> numbers = new List<double>(); ;
@@ -91,13 +109,12 @@ namespace Mathematics
             {
                 numbers.Add(0);
             }
-            newV = new Vector(numbers);
             for (int i = 0; i < shorterDimension; i++)
             {
-                newV.vector[i] = v1.vector[i] * v2.vector[i];
+                dot += v1.vector[i] * v2.vector[i];
             }
 
-            return newV;
+            return dot;
         }
 
         public static Vector operator -(Vector v1, Vector v2)
@@ -109,11 +126,13 @@ namespace Mathematics
         {
             String str = "<";
 
-            for (int i = 0; i < dimensions - 1; i++)
+            for (int i = 0; i < dimensions; i++)
             {
-                str += vector[i] + ", ";
+                str += vector[i];
+                if (i != dimensions - 1)
+                    str += ", ";
             }
-            str += vector[dimensions - 1] + ">";
+            str += ">";
 
             return str;
         }

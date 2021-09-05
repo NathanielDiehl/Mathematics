@@ -145,6 +145,15 @@ namespace Mathematics
 
             return new Polynomial(newP);
         }
+        public static Polynomial operator *(double s,Polynomial p)
+        {
+            return p * s;
+        }
+
+        public static Polynomial operator /(Polynomial p, double s)
+        {
+            return p * (1/s);
+        }
         public static Polynomial operator +(Polynomial p1, Polynomial p2)
         {
             Polynomial newP;
