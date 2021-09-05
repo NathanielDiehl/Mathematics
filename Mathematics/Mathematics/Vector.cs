@@ -116,6 +116,7 @@ namespace Mathematics
 
             return dot;
         }
+        /// Cross
 
         public static Vector operator -(Vector v1, Vector v2)
         {
