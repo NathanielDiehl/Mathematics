@@ -6,7 +6,21 @@ namespace Mathematics
 {
     internal class Matrix
     {
-        public List<List<double>> matrix { get; private set; }
+        private List<List<double>> matrix { get; set; }
+
+        public double this[int i, int j]
+        {
+            get
+            {
+                return matrix[i][j];
+            }
+            set
+            {
+                matrix[i][j] = value;
+            }
+        }
+
+
         public int Row { get; private set; }
         public int Column { get; private set; }
 

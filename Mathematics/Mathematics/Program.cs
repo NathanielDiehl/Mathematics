@@ -7,14 +7,9 @@ namespace Mathematics
     {
         static void Main(string[] args)
         {
-            Polynomial p = new Polynomial(5, 5, 5, 7);
+            /*Polynomial p = new Polynomial(5, 5, 5, 7);
             Polynomial d = Calculus.Derivative(p);
             Polynomial i = Calculus.Integral(d, 7);
-
-            /*Console.WriteLine(p);
-            Console.WriteLine(d);
-            Console.WriteLine(i);
-            Console.WriteLine(Calculus.Integral(d, 3, 1) );*/
 
             Vector v1 = new Vector(1, 2, 3, 4);
             Vector v2 = new Vector(10, 20, 30);
@@ -33,7 +28,12 @@ namespace Mathematics
             Matrix m2 = new Matrix(m2Data);
 
             Console.WriteLine(m2);
-            Console.WriteLine("\n"+m2.Determinate());
+            Console.WriteLine("\n"+m2.Determinate());*/
+
+            Vector v = new Vector(1, 2, 3);
+            Matrix m = new Matrix(new double[][]{ new double[] { 1, 2 }, new double[] { 3, 4 } });
+            Console.WriteLine(m[1,1]);
+
         }
     }
 }

@@ -6,7 +6,21 @@ namespace Mathematics
 {
     internal class Vector
     {
-        public List<double> vector;
+        private List<double> vector;
+
+        public double this[int i]
+        {
+            get
+            {
+                return vector[i];
+            }
+            set
+            {
+                vector[i] = value;
+            }
+        }
+
+
         public int Dimensions { get; private set; }
         public Vector(List<double> v)
         {
